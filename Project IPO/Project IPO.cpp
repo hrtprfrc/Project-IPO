@@ -12,7 +12,7 @@ int main()
 	newDraw.Draw(0, NewField); 
 	while (1)
 	{
-		newTurns.NextTurn(NewField); 
+		newTurns.NextTurn(&NewField); 
 		newDraw.Draw(newTurns.NumOfTurn%2,NewField); 
 	}
 	
