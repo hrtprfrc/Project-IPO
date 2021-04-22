@@ -18,8 +18,7 @@ public:
 	void Draw(int curPlayer, Field field) 
 	{
 		std::cout << "Turn: ";
-		std::cout << (curPlayer == CROSS) ? 'X' : '0' << '\n';
-
+		std::cout << ((curPlayer == CROSS) ? 'X' : '0') << '\n';
 		field.PrintField();
 	}
 };
