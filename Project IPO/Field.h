@@ -9,7 +9,7 @@ class Field
 
 public:
 	Field();
-	void AddToField(char, int, int);
+	bool AddToField(char, int, int);
 	void PrintField();
 	array<char, 9> getField();
 
