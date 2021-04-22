@@ -9,6 +9,6 @@ public:
 
 	int NumOfTurn = 0; 
 	Turns() {}
-	void NextTurn(Field);
+	void NextTurn(Field*);
 };
 
