@@ -1,14 +1,16 @@
 #include <array>
 #pragma once
 
+using namespace std;
+
 class Field
 {
-	std::array<int, 16> FieldArr;
+	array<int, 16> FieldArr;
 
 public:
 	Field();
 	void AddToField(char, int, int);
 	void PrintField();
-	std::array<int, 16> getField();
+	array<int, 16> getField();
 
 };
