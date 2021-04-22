@@ -5,10 +5,9 @@ using namespace std;
 
 class Turns
 {
-	int NumOfTurn = 0;
+public: 
 
-public:
-
+	int NumOfTurn = 0; 
 	Turns() {}
 	void NextTurn(Field);
 };
