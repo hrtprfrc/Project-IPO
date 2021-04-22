@@ -29,10 +29,10 @@
     <ClInclude Include="Field.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="Header.h">
-      <Filter>Исходные файлы</Filter>
-    </ClInclude>
     <ClInclude Include="Turns.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="Header.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
   </ItemGroup>

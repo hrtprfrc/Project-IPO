@@ -9,9 +9,7 @@ class Turns
 
 public:
 
-	Turns()
-	{
-	}
+	Turns() {}
 	void NextTurn(Field);
 };
 
