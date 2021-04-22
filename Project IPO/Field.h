@@ -5,12 +5,12 @@ using namespace std;
 
 class Field
 {
-	array<int, 16> FieldArr;
+	array<char, 9> FieldArr;
 
 public:
 	Field();
 	void AddToField(char, int, int);
 	void PrintField();
-	array<int, 16> getField();
+	array<char, 9> getField();
 
 };
