@@ -15,14 +15,20 @@ Field::Field()
 	}
 }
 
-void Field::AddToField(char c, int x, int y)
+bool Field::AddToField(char c, int x, int y)
 {
 	try
 	{
 		int index = 3 * (x - 1) + (y - 1);
-		FieldArr[index] = c;
+		if (x < 4 && y < 4 && x > 0 && y > 0 && FieldArr[index] == '.')
+		{
+			FieldArr[index] = c;
+			return true;
+		}
+		else
+			return false;
 	}
-	catch (...) {	}
+	catch (...) { return false; }
 }
 
 void Field::PrintField()
@@ -38,7 +44,7 @@ void Field::PrintField()
 	}
 }
 
-std::array<char, 9> Field::getField()
+array<char, 9> Field::getField()
 {
 	return FieldArr;
 }
