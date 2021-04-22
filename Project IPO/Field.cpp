@@ -5,12 +5,12 @@ using namespace std;
 
 Field::Field()
 {
-	for (int i = 0; i < 4; i++)
+	for (int i = 0; i < 3; i++)
 	{
-		for (int j = 0; j < 4; j++)
+		for (int j = 0; j < 3; j++)
 		{
-			int index = 4 * i + j;
-			FieldArr[index] = 0;
+			int index = 3 * i + j;
+			FieldArr[index] = '.';
 		}
 	}
 }
@@ -19,26 +19,26 @@ void Field::AddToField(char c, int x, int y)
 {
 	try
 	{
-		int index = 4 * (x - 1) + (y - 1);
-		FieldArr[index] = 1;
+		int index = 3 * (x - 1) + (y - 1);
+		FieldArr[index] = c;
 	}
 	catch (...) {	}
 }
 
 void Field::PrintField()
 {
-	for (int i = 0; i < 4; i++)
+	for (int i = 0; i < 3; i++)
 	{
-		for (int j = 0; j < 4; j++)
+		for (int j = 0; j < 3; j++)
 		{
-			int index = 4 * i + j;
+			int index = 3 * i + j;
 			cout << FieldArr[index];
 		}
 		cout << endl;
 	}
 }
 
-std::array<int, 16> Field::getField()
+std::array<char, 9> Field::getField()
 {
 	return FieldArr;
 }
